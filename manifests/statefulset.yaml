@@ -1,38 +1,38 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx
+  name: ryurulznginx
   labels:
-    app: nginx
+    app: ryurulznginx
 spec:
   ports:
   - port: 80
-    name: web
+    name: ryurulznginx
   clusterIP: None
   selector:
-    app: nginx
+    app: nryurulznginx
 ---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: web
+  name: ryurulznginx
 spec:
-  serviceName: "nginx"
+  serviceName: "ryurulznginx"
   replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      app: ryurulznginx
   template:
     metadata:
       labels:
-        app: nginx
+        app: ryurulznginx
     spec:
       containers:
-      - name: nginx
+      - name: ryurulznginx
         image: registry.k8s.io/nginx-slim:0.8
         ports:
         - containerPort: 80
-          name: web
+          name: ryurulznginx
         volumeMounts:
         - name: www
           mountPath: /usr/share/nginx/html
@@ -42,7 +42,6 @@ spec:
     spec:
       accessModes: 
       - ReadWriteOnce
-      - ReadWriteMany
       resources:
         requests:
           storage: 1Gi

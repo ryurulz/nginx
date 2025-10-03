@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440" height="2160" viewBox="0 0 1440 2160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style><![CDATA[
+      .section { fill: #F8FAFC; stroke: #CBD5E1; }
+      .card { fill: #FFFFFF; stroke: #CBD5E1; }
+      .muted { fill: #E5E7EB; }
+      .line { stroke: #CBD5E1; }
+      .heading { font: 700 24px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 600 16px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #0F172A; }
+      .text { font: 400 12px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #334155; }
+      .eyebrow { font: 600 12px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #0F6CBD; letter-spacing: .08em; }
+      .btn { fill: #0F6CBD; }
+      .btn-alt { fill: #111827; }
+      .btn-text { font: 600 14px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #FFFFFF; }
+      .nav { fill: #E2E8F0; }
+      .logo { fill: #0F172A; }
+    ]]></style>
+  </defs>
+
+  <!-- HEADER -->
+  <rect x="0" y="0" width="1440" height="80" fill="#FFFFFF"/>
+  <line x1="0" y1="80.5" x2="1440" y2="80.5" class="line"/>
+  <rect x="40" y="22" width="120" height="36" rx="6" class="logo"/>
+  <rect x="1040" y="24" width="60" height="12" rx="6" class="nav"/>
+  <rect x="1110" y="24" width="60" height="12" rx="6" class="nav"/>
+  <rect x="1180" y="24" width="60" height="12" rx="6" class="nav"/>
+  <rect x="1250" y="24" width="60" height="12" rx="6" class="nav"/>
+  <rect x="1320" y="18" width="60" height="28" rx="6" class="btn"/>
+
+  <!-- HERO (CENTERED) -->
+  <g transform="translate(0,96)">
+    <rect x="40" y="0" width="1360" height="420" rx="14" class="section"/>
+    <text x="720" y="56" text-anchor="middle" class="eyebrow">HOME • VARIANT: MULTI‑PAGE A</text>
+    <text x="720" y="100" text-anchor="middle" class="heading">Clear Headline for Primary Offering</text>
+    <text x="720" y="132" text-anchor="middle" class="text">Brief supporting statement to build trust.</text>
+    <rect x="560" y="168" width="160" height="40" rx="8" class="btn"/>
+    <text x="640" y="193" text-anchor="middle" class="btn-text">See Services</text>
+    <rect x="736" y="168" width="160" height="40" rx="8" class="btn-alt"/>
+    <text x="816" y="193" text-anchor="middle" class="btn-text">About Us</text>
+    <rect x="430" y="230" width="580" height="160" rx="10" class="muted"/>
+  </g>
+
+  <!-- HIGHLIGHT STRIP (4 COL ICONS) -->
+  <g transform="translate(0,532)">
+    <rect x="40" y="0" width="1360" height="180" rx="14" class="section"/>
+    <g transform="translate(80,36)">
+      <g>
+        <rect x="0" y="0" width="56" height="56" rx="10" class="muted"/>
+        <rect x="0" y="70" width="180" height="10" rx="5" class="muted"/>
+      </g>
+      <g transform="translate(320,0)">
+        <rect x="0" y="0" width="56" height="56" rx="10" class="muted"/>
+        <rect x="0" y="70" width="180" height="10" rx="5" class="muted"/>
+      </g>
+      <g transform="translate(640,0)">
+        <rect x="0" y="0" width="56" height="56" rx="10" class="muted"/>
+        <rect x="0" y="70" width="180" height="10" rx="5" class="muted"/>
+      </g>
+      <g transform="translate(960,0)">
+        <rect x="0" y="0" width="56" height="56" rx="10" class="muted"/>
+        <rect x="0" y="70" width="180" height="10" rx="5" class="muted"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- SERVICES OVERVIEW (3 CARDS) -->
+  <g transform="translate(0,736)">
+    <rect x="40" y="0" width="1360" height="420" rx="14" class="section"/>
+    <text x="80" y="48" class="sub">Top Services</text>
+    <g transform="translate(80,84)">
+      <rect x="0" y="0" width="392" height="300" rx="10" class="card"/>
+      <rect x="408" y="0" width="392" height="300" rx="10" class="card"/>
+      <rect x="816" y="0" width="392" height="300" rx="10" class="card"/>
+    </g>
+  </g>
+
+  <!-- ABOUT PREVIEW (SPLIT) -->
+  <g transform="translate(0,1180)">
+    <rect x="40" y="0" width="1360" height="360" rx="14" class="section"/>
+    <rect x="80" y="40" width="560" height="280" rx="10" class="muted"/>
+    <text x="680" y="84" class="sub">About Our Company</text>
+    <rect x="680" y="112" width="640" height="10" rx="5" class="muted"/>
+    <rect x="680" y="130" width="600" height="10" rx="5" class="muted"/>
+    <rect x="680" y="148" width="580" height="10" rx="5" class="muted"/>
+    <rect x="680" y="180" width="160" height="36" rx="8" class="btn"/>
+  </g>
+
+  <!-- TESTIMONIALS (STRIP) -->
+  <g transform="translate(0,1560)">
+    <rect x="40" y="0" width="1360" height="300" rx="14" class="section"/>
+    <text x="80" y="48" class="sub">Testimonials</text>
+    <g transform="translate(80,84)">
+      <rect x="0" y="0" width="416" height="180" rx="10" class="card"/>
+      <rect x="432" y="0" width="416" height="180" rx="10" class="card"/>
+      <rect x="864" y="0" width="416" height="180" rx="10" class="card"/>
+    </g>
+  </g>
+
+  <!-- CTA -->
+  <g transform="translate(0,1888)">
+    <rect x="40" y="0" width="1360" height="160" rx="14" class="section"/>
+    <text x="80" y="72" class="heading">Let’s build something great</text>
+    <rect x="320" y="96" width="160" height="40" rx="8" class="btn"/>
+    <text x="400" y="121" text-anchor="middle" class="btn-text">Contact</text>
+  </g>
+</svg>
